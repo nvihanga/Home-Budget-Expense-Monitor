@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|solutionrelative:controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|solutionrelative:controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\services\\expenseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,12 +15,16 @@
       "RelativeMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|solutionrelative:services\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\dto\\addexpensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|solutionrelative:dto\\addexpensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|solutionrelative:controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|solutionrelative:controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\dto\\daterangedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|solutionrelative:dto\\daterangedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\dto\\addexpensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|solutionrelative:dto\\addexpensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D8FE21E-9B1B-4247-A9D9-E081077FB9BA}|Backend.csproj|d:\\blue lotus\\project\\home-budget-expense-monitor\\backend\\models\\expensecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,30 +82,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-15T04:35:20.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ExpenseController.cs",
               "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Controllers\\ExpenseController.cs",
               "RelativeDocumentMoniker": "Controllers\\ExpenseController.cs",
               "ToolTip": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Controllers\\ExpenseController.cs",
               "RelativeToolTip": "Controllers\\ExpenseController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAmwD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T03:30:12.039Z",
               "EditorCaption": ""
@@ -120,12 +107,11 @@
               "RelativeToolTip": "Services\\BudgetService.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAUwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T17:06:39.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T17:06:39.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -137,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ExpenseSummaryDto.cs",
               "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Dto\\ExpenseSummaryDto.cs",
               "RelativeDocumentMoniker": "Dto\\ExpenseSummaryDto.cs",
@@ -149,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "BudgetUpdateDto.cs",
               "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Dto\\BudgetUpdateDto.cs",
               "RelativeDocumentMoniker": "Dto\\BudgetUpdateDto.cs",
@@ -167,14 +153,13 @@
               "RelativeDocumentMoniker": "Services\\ExpenseService.cs",
               "ToolTip": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Services\\ExpenseService.cs",
               "RelativeToolTip": "Services\\ExpenseService.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwCAAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAkwH8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:34:34.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:34:34.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "BudgetController.cs",
               "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Controllers\\BudgetController.cs",
               "RelativeDocumentMoniker": "Controllers\\BudgetController.cs",
@@ -182,12 +167,35 @@
               "RelativeToolTip": "Controllers\\BudgetController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwCAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T03:17:40.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T03:17:40.125Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "AddExpenseDto.cs",
+              "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Dto\\AddExpenseDto.cs",
+              "RelativeDocumentMoniker": "Dto\\AddExpenseDto.cs",
+              "ToolTip": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Dto\\AddExpenseDto.cs",
+              "RelativeToolTip": "Dto\\AddExpenseDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T16:32:58.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-15T04:35:20.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "IBudgetService.cs",
               "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Services\\IBudgetService.cs",
               "RelativeDocumentMoniker": "Services\\IBudgetService.cs",
@@ -199,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DateRangeDto.cs",
               "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Dto\\DateRangeDto.cs",
               "RelativeDocumentMoniker": "Dto\\DateRangeDto.cs",
@@ -223,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IExpenseService.cs",
               "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Services\\IExpenseService.cs",
               "RelativeDocumentMoniker": "Services\\IExpenseService.cs",
@@ -232,18 +240,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T16:34:20.428Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AddExpenseDto.cs",
-              "DocumentMoniker": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Dto\\AddExpenseDto.cs",
-              "RelativeDocumentMoniker": "Dto\\AddExpenseDto.cs",
-              "ToolTip": "D:\\Blue Lotus\\Project\\Home-Budget-Expense-Monitor\\Backend\\Dto\\AddExpenseDto.cs",
-              "RelativeToolTip": "Dto\\AddExpenseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:32:58.338Z"
             },
             {
               "$type": "Document",

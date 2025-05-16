@@ -1,6 +1,7 @@
 ﻿using Backend.Dto;
 using Backend.Models;
 using Microsoft.Data.SqlClient;
+using Microsoft.Identity.Client;
 using System.Data;
 
 namespace Backend.Services
@@ -34,10 +35,15 @@ namespace Backend.Services
                     return rows > 0;
                 }
             }
+            catch (SqlException ex)
+            {
+                Console.WriteLine($"SQL Error: {ex.Message}");
+                throw new ApplicationException("Database error occured");
+            }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return false;
+                Console.WriteLine($"Error: {ex.Message}");
+                throw new ApplicationException("An error occured while adding the expense");
             }
 
         }
