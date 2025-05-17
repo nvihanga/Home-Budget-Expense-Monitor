@@ -1,0 +1,13 @@
+.card {
+  border-radius: 12px;
+}
+
+.btn-primary {
+  background-color: #1e5eff;
+  border-color: #1e5eff;
+
+  &:hover {
+    background-color: #1663dd;
+    border-color: #1663dd;
+  }
+}

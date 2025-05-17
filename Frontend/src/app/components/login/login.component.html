@@ -1,0 +1,42 @@
+<div class="container d-flex justify-content-center align-items-center min-vh-100 bg-light-blue">
+  <div class="card shadow p-4" style="width: 100%; max-width: 440px; border-radius: 20px;">
+    <div class="text-center mb-4">
+      <img src="/logo.png" alt="B&E Tracker Logo" style="height: 150px;" />
+    </div>
+    <h3 class="text-center mb-3 fw-bold">Login</h3>
+
+    <form (ngSubmit)="onLogin()">
+      <div class="mb-3">
+        <label for="email" class="form-label fw-semibold">
+          <i class="bi bi-envelope-fill me-2"></i>Email
+        </label>
+        <input
+          type="email"
+          id="email"
+          class="form-control bg-light border-0"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+      </div>
+
+      <div class="mb-4">
+        <label for="password" class="form-label fw-semibold">
+          <i class="bi bi-lock-fill me-2"></i>Password
+        </label>
+        <input
+          type="password"
+          id="password"
+          class="form-control bg-light border-0"
+          [(ngModel)]="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Login</button>
+    </form>
+  </div>
+</div>
