@@ -1,0 +1,11 @@
+.active-link,
+.active-sub {
+  background-color: #1E5EFF !important;
+  color: white !important;
+  border-radius: 0.375rem; /* optional: rounded corners */
+}
+
+.active-link i,
+.active-sub i {
+  color: white !important;
+}

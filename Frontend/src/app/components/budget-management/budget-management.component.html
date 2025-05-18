@@ -1,1 +1,57 @@
-<p>budget-management works!</p>
+<div class="container mt-4 px-4">
+  <h5 class="mb-1">Budget Management</h5>
+  <p class="text-muted mb-4">Record a new spending entry into your tracker.</p>
+
+  <form [formGroup]="budgetForm" (ngSubmit)="onSubmit()">
+    <!-- User Id -->
+    <div class="mb-3" style="max-width: 500px;">
+      <label for="userId" class="form-label fw-semibold">User Id</label>
+      <input type="text"
+             id="userId"
+             formControlName="userId"
+             placeholder="User Id"
+             class="form-control" />
+    </div>
+
+    <!-- Category -->
+    <div class="mb-3" style="max-width: 500px;">
+      <label for="category" class="form-label fw-semibold">Category</label>
+      <select id="category"
+              formControlName="category"
+              class="form-select">
+        <option value="">Select a category</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Bills">Bills</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+
+    <!-- Amount -->
+    <div class="mb-3" style="max-width: 500px;">
+      <label for="amount" class="form-label fw-semibold">Amount</label>
+      <input type="number"
+             id="amount"
+             formControlName="amount"
+             placeholder="Rs."
+             class="form-control" />
+    </div>
+
+    <!-- Buttons -->
+    <div class="d-flex gap-3">
+      <button type="submit"
+              class="btn"
+              [disabled]="budgetForm.invalid"
+              style="background-color: #1E5EFF; color: white;">
+        Submit
+      </button>
+      <button type="button"
+              (click)="onClear()"
+              class="btn"
+              style="background-color: #1E5EFF; color: white;">
+        Clear
+      </button>
+    </div>
+  </form>
+</div>
