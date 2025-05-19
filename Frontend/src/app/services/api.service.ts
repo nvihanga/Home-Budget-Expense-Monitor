@@ -13,4 +13,13 @@ export class ApiService {
   addExpense(data: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/expense/add`, data, { responseType: 'text' });
   }
+
+  getExpenseCategories(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/expense/categories`);
+  }
+
+  addExpenseCategory(data: any): Observable<any> {
+  return this.http.post(`${this.baseUrl}/expense/add-category`, data, { responseType: 'text' });
+}
+
 }

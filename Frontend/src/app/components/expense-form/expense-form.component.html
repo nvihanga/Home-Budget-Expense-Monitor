@@ -1,5 +1,5 @@
 <div class="container mt-4 px-4">
-  <h5 class="mb-1">Add New Expense</h5>
+  <h2 class="mb-1">Add New Expense</h2>
   <p class="text-muted mb-4">Record a new spending entry into your tracker.</p>
 
   <form *ngIf="expenseForm" [formGroup]="expenseForm" (ngSubmit)="onSubmit()">
@@ -16,26 +16,42 @@
     <!-- Category -->
     <div class="mb-3" style="max-width: 500px;">
       <label for="categoryId" class="form-label fw-semibold">Category</label>
+      <div class="d-flex gap-2">
       <select id="categoryId"
               formControlName="categoryId"
               class="form-select">
         <option value="">Select a category</option>
-        <option value="1">Food</option>
-        <option value="2">Transport</option>
-        <option value="3">Entertainment</option>
-        <option value="4">Bills</option>
-        <option value="5">Others</option>
+        <option *ngFor="let category of categories" [value]="category.categoryId">
+      {{ category.categoryName }}
+    </option>
+       
       </select>
+
+      <input type="text"
+           class="form-control"
+           placeholder="New category"
+           formControlName="newCategoryName"
+           style="max-width: 200px;" />
+      
+      <button type="button"
+            class="btn"
+            style="background-color: #1E5EFF; color: white;"
+            (click)="addNewCategory()">
+      +
+    </button>
+      </div>
     </div>
 
     <!-- Amount -->
     <div class="mb-3" style="max-width: 500px;">
       <label for="amount" class="form-label fw-semibold">Amount</label>
-      <input type="number"
-             id="amount"
-             formControlName="amount"
-             placeholder="Rs."
-             class="form-control" />
+      <div class="input-group">
+        <span class="input-group-text">Rs.</span>
+        <input type="number"
+              id="amount"
+              formControlName="amount"
+              class="form-control" />
+      </div>
     </div>
 
     <!-- Date -->

@@ -48,6 +48,66 @@ namespace Backend.Services
 
         }
 
+        public async Task AddExpenseCategoryAsync(ExpenseCategoryDto dto)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(_connectionString))
+                using (SqlCommand cmd = new SqlCommand("sp_AddExpenseCategory", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@CategoryName", dto.CategoryName);
+
+
+                    await conn.OpenAsync();
+                    await cmd.ExecuteNonQueryAsync();
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine($"SQL Error: {ex.Message}");
+                throw new ApplicationException("Database error occured");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error adding category: " + ex.Message);
+                throw;
+            }
+
+        }
+
+        public async Task<List<ExpenseCategory>> GetExpenseCategoriesAsync()
+        {
+            var categories = new List<ExpenseCategory>();
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(_connectionString))
+                using (SqlCommand cmd = new SqlCommand("sp_GetAllExpenseCategories", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    await conn.OpenAsync();
+
+                    using (SqlDataReader reader = await cmd.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            categories.Add(new ExpenseCategory
+                            {
+                                CategoryId = reader.GetInt32(0),
+                                CategoryName = reader.GetString(1)
+                            });
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return categories;
+        }
+
         public async Task<List<Expense>> GetExpensesByDateRange(DateRangeDto dto)
         {
             var expenses = new List<Expense>();
@@ -125,5 +185,6 @@ namespace Backend.Services
             return summaryList;
         }
 
+        
     }
 }

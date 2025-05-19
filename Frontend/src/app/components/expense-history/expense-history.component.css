@@ -1,0 +1,41 @@
+.table th {
+  font-weight: 500;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-control, .input-group-text {
+  border-color: #e0e0e0;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Optional: Style the date range inputs to match design */
+input[type="date"] {
+  min-width: 140px;
+}
+
+/* Ensure trash icon is clickable */
+.btn-link {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Add some spacing between rows */
+.table tbody tr {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* Make table header more prominent */
+.table thead th {
+  border-bottom: 2px solid #dee2e6;
+}

@@ -9,6 +9,6 @@ import { LoginComponent } from './components/login/login.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Frontend';
+  title = 'Home Budget & Expense Monitor ';
 }
 

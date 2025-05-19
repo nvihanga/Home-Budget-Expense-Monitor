@@ -1,0 +1,28 @@
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+}
+
+/* Custom status indicators */
+.text-success {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.text-warning {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #f0ad4e !important;
+}
+
+/* Form styling */
+.form-control, .form-select, .input-group-text {
+  border-radius: 4px;
+  padding: 0.625rem 0.75rem;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+}

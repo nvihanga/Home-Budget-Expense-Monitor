@@ -54,6 +54,32 @@
   },
   {
     "ContainingType": "Backend.Controllers.ExpenseController",
+    "Method": "AddExpenseCategory",
+    "RelativePath": "api/Expense/add-category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Backend.Dto.ExpenseCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.ExpenseController",
+    "Method": "GetExpenseCategories",
+    "RelativePath": "api/Expense/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.ExpenseController",
     "Method": "GetExpensesByDateRange",
     "RelativePath": "api/Expense/history",
     "HttpMethod": "GET",

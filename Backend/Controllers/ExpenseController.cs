@@ -57,5 +57,28 @@ namespace Backend.Controllers
             }
             return NotFound("No expense summary found for the given month and year.");
         }
+
+        [HttpGet("categories")]
+
+        public async Task<IActionResult> GetExpenseCategories()
+        {
+            var categories = await _expenseService.GetExpenseCategoriesAsync();
+            if (categories != null && categories.Count > 0)
+            {
+                return Ok(categories);
+            }
+            return NotFound("No expense categories found.");
+        }
+
+        [HttpPost("add-category")]
+
+        public async Task<IActionResult> AddExpenseCategory([FromBody] ExpenseCategoryDto dto)
+        {
+            if (string.IsNullOrWhiteSpace(dto.CategoryName))
+                return BadRequest("Category name is required.");
+
+            await _expenseService.AddExpenseCategoryAsync(dto);
+            return Ok("Category added successfully.");
+        }
     }
 }
