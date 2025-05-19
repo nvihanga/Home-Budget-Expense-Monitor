@@ -22,4 +22,15 @@ export class ApiService {
   return this.http.post(`${this.baseUrl}/expense/add-category`, data, { responseType: 'text' });
 }
 
+  getExpenseHistory(userId: number, startDate: string, endDate: string): Observable<any> {
+  return this.http.get(`${this.baseUrl}/expense/history`, {
+    params: {
+      userId: userId.toString(),
+      startDate,
+      endDate
+    }
+  });
+}
+
+
 }

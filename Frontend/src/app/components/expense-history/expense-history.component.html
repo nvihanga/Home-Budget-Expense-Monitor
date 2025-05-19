@@ -13,8 +13,8 @@
             <input 
               type="text" 
               class="form-control" 
-              placeholder="Search by UserId"
-              formControlName="searchTerm">
+              placeholder="Enter User Id"
+              formControlName="userId">
           </div>
         </div>
         <div class="col-md-3">
@@ -45,7 +45,7 @@
           <thead class="bg-light">
             <tr>
               <th class="py-3">Date</th>
-              <th class="py-3">Category</th>
+             <!-- <th class="py-3">Category</th>-->
               <th class="py-3">Description</th>
               <th class="py-3">Amount</th>
               <th class="py-3">Action</th>
@@ -54,7 +54,7 @@
           <tbody>
             <tr *ngFor="let expense of filteredExpenses">
               <td>{{ formatDate(expense.date) }}</td>
-              <td>{{ expense.category }}</td>
+             <!-- <td>{{ expense.category }}</td>-->
               <td>{{ expense.description }}</td>
               <td>Rs.{{ expense.amount }}</td>
               <td>
