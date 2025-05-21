@@ -6,16 +6,9 @@ interface BudgetItem {
   budget: number;
   spent: number;
   remaining: number;
-  status: 'over' | 'under' | 'on-track';
+  remainingAmount: string;
 }
 
-interface BudgetSummary {
-  category: string;
-  budgeted: number;
-  due: string;
-  remaining: number;
-  percentage: number;
-}
 
 @Component({
   selector: 'app-dashboard',
@@ -23,94 +16,51 @@ interface BudgetSummary {
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
-export class DashboardComponent implements OnInit{
-  month: string = 'May';
-  searchQuery: string = '';
-  Math = Math; // Make Math available in the template
-  
-  // Budget Summary Data
-  budgetSummaries: BudgetSummary[] = [
-    {
-      category: 'Rent',
-      budgeted: 15000,
-      due: '5th - 10th',
-      remaining: 0,
-      percentage: 100
-    },
-    {
-      category: 'Utilities',
-      budgeted: 5000,
-      due: '10th - 15th',
-      remaining: 1200,
-      percentage: 76
-    },
-    {
-      category: 'Groceries',
-      budgeted: 20000,
-      due: '1st - 30th',
-      remaining: -1500,
-      percentage: 107
-    },
-    {
-      category: 'Transport',
-      budgeted: 3000,
-      due: '1st - 30th',
-      remaining: 400,
-      percentage: 87
-    }
-  ];
-
-  // Budget vs Spending Data
+export class DashboardComponent implements OnInit {
   budgetItems: BudgetItem[] = [
     {
       category: 'Groceries',
       budget: 20000,
-      spent: 21500,
-      remaining: -1500,
-      status: 'over'
+      spent: 23400,
+      remaining: -17,
+      remainingAmount: 'Rs. 3,400'
     },
     {
       category: 'Rent',
       budget: 15000,
       spent: 8200,
-      remaining: 6800,
-      status: 'under'
+      remaining: 45,
+      remainingAmount: 'Rs. 6,800'
     },
     {
       category: 'Utilities',
-      budget: 5000,
-      spent: 5800,
-      remaining: -800,
-      status: 'over'
+      budget: 5500,
+      spent: 6600,
+      remaining: -20,
+      remainingAmount: 'Rs. 1,100'
     },
     {
       category: 'Transport',
-      budget: 3000,
-      spent: 2600,
-      remaining: 400,
-      status: 'under'
+      budget: 6000,
+      spent: 3600,
+      remaining: 40,
+      remainingAmount: 'Rs. 2,400'
     }
   ];
 
   constructor() { }
 
   ngOnInit(): void {
-    // Any initialization code can go here
+    // Initialize data or fetch from service
   }
 
-  // Format currency in Indian Rupee format
-  formatCurrency(amount: number): string {
-    return 'Rs. ' + amount.toLocaleString('en-IN');
-  }
-
-  // Filter budget items based on search query
-  get filteredBudgetItems(): BudgetItem[] {
-    if (!this.searchQuery) {
-      return this.budgetItems;
+  getBadgeClass(item: BudgetItem): string {
+    if (item.remaining > 0) {
+      return 'bg-success'; // Under budget (positive remaining)
+    } else if (item.remaining < 0) {
+      return 'bg-danger'; // Over budget (negative remaining)
+    } else {
+      return 'bg-secondary'; // Exactly on budget
     }
-    
-    return this.budgetItems.filter(item => 
-      item.category.toLowerCase().includes(this.searchQuery.toLowerCase())
-    );
   }
-}
+  }

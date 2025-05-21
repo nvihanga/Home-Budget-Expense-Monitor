@@ -1,10 +1,10 @@
 <div class="container mt-4 px-4">
-  <h5 class="mb-1">
-    <i class="bi bi-wallet me-2"></i>Budget Management
-  </h5>
+  <h2 class="mb-1">
+    Budget Management
+  </h2>
   <p class="text-muted mb-4">Set or update your spending limits by category.</p>
 
-  <form [formGroup]="budgetForm" (ngSubmit)="onSubmit()">
+  <form *ngIf="categoriesLoaded" [formGroup]="budgetForm" (ngSubmit)="onSubmit()">
     <!-- User Id -->
     <div class="mb-3" style="max-width: 500px;">
       <label for="userId" class="form-label fw-semibold">User Id</label>
@@ -22,11 +22,9 @@
               formControlName="category"
               class="form-select">
         <option value="">Select a category</option>
-        <option value="Groceries">Groceries</option>
-        <option value="Transport">Transport</option>
-        <option value="Entertainment">Entertainment</option>
-        <option value="Rent">Rent</option>
-        <option value="Others">Others</option>
+        <option *ngFor="let cat of categories" [value]="cat.categoryId">
+    {{ cat.categoryName }}
+  </option>
       </select>
     </div>
 

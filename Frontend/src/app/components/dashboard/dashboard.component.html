@@ -1,0 +1,74 @@
+<div class="container mt-4">
+  <!-- Header -->
+  <div class="dashboard-header mb-4">
+    <h1>Dashboard Overview</h1>
+    <p class="text-muted">Summary of your spending and budgets for May</p>
+  </div>
+
+  <!-- Budget Summary Section -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="card-title mb-0">Budget Summary - May</h5>
+        <div class="search-box">
+          <input type="text" class="form-control form-control-sm" placeholder="Search by userId" aria-label="Search">
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Dynamically Rendered Summary Cards -->
+        <!-- Dynamically Generated Summary Cards -->
+<div class="col-md-3 col-sm-6 mb-3" *ngFor="let item of budgetItems">
+  <div class="card summary-card">
+    <div class="card-body">
+      <div class="d-flex align-items-center mb-2">
+        <span class="budget-icon me-2">{{ item.category.charAt(0) }}</span>
+        <h6 class="mb-0">{{ item.category }}</h6>
+      </div>
+      <div class="budget-detail">
+        <p class="mb-1"><small>Budgeted:</small> <span class="fw-bold">Rs. {{ item.budget | number }}</span></p>
+        <p class="mb-1"><small>Spent:</small> <span class="fw-bold">Rs. {{ item.spent | number }}</span></p>
+        <p class="mb-0">
+          <small>Remaining:</small>
+          <span class="fw-bold" [ngClass]="getBadgeClass(item)">{{ item.remaining }}%</span>
+          <span class="text-muted">- {{ item.remainingAmount }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Budget vs Spending Section -->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title mb-4">Budget vs Spending</h5>
+
+      <div class="table-responsive">
+        <table class="table budget-table">
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Budget</th>
+              <th scope="col">Spent</th>
+              <th scope="col">Remaining</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of budgetItems">
+              <td>{{ item.category }}</td>
+              <td>Rs. {{ item.budget | number }}</td>
+              <td>Rs. {{ item.spent | number }}</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="badge me-2" [ngClass]="getBadgeClass(item)">{{ item.remaining }}%</span>
+                  <span>{{ item.remainingAmount }}</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

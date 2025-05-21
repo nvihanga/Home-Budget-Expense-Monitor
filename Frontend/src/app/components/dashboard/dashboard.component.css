@@ -1,0 +1,84 @@
+.dashboard-header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.dashboard-header p {
+  font-size: 0.9rem;
+}
+
+.budget-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  color: #333;
+  width: 26px;
+  height: 26px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50%;
+}
+
+.summary-card {
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.summary-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.budget-detail p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.budget-detail .fw-bold {
+  color: #333;
+}
+
+.placeholder-card {
+  background-color: #f8f9fa;
+  min-height: 120px;
+}
+
+.budget-table th {
+  font-weight: 500;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.budget-table td {
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+/* Search box styling */
+.search-box {
+  max-width: 200px;
+}
+
+.search-box .form-control {
+  padding-left: 25px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 12px;
+}
+
+/* Badge styling */
+.badge {
+  padding: 5px 8px;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .budget-table th, .budget-table td {
+    font-size: 0.8rem;
+  }
+}

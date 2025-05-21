@@ -32,5 +32,22 @@ export class ApiService {
   });
 }
 
+  updateBudget(data: any): Observable<any> {
+    console.log('Sending updateBudget request to:', `${this.baseUrl}/budget/update`);
+
+    return this.http.put(`${this.baseUrl}/budget/update`, data, { responseType: 'text' });
+  }
+
+  getMonthlyExpenseSummary(userId: number, month: number, year: number): Observable<any[]> {
+  return this.http.get<any[]>(`${this.baseUrl}/expense/summary`, {
+    params: {
+      userId: userId.toString(),
+      month: month.toString(),
+      year: year.toString()
+    }
+  });
+}
+
+
 
 }
